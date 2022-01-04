@@ -18,8 +18,8 @@ jobs:
       with:
         go-version: 1.17
 
-    - name: Build
-      run: go build -v /home/hzech/my-project
+    - name: Check out code into the Go module directoryBuild
+      uses: actions/checkout@v2
 
     - name: Test
       run: go test -v ./...
